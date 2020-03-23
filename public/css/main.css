@@ -1,0 +1,63 @@
+body {
+	height: 100vh;
+}
+
+@media only screen and (max-width: 900px) {
+	#dashboard {
+		display: block;
+	}
+
+	#dashboardPanelRight, #dashboardPanelLeft {
+		display: block;
+		width: 100%;
+	}
+
+	#dashboard hr {
+		display: block;
+	}
+
+	#dashboardPanelRight .tile.h-large {
+		height: 8.75rem;
+	}
+}
+
+/*--- Dashboard Tile ---*/
+.tile.tile-dashboard {
+	display: flex;
+	flex-direction: column;
+}
+
+.tile.tile-dashboard > i {
+	flex: 1;
+	font-size: 3rem;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	position: relative; top: 1.5rem;
+}
+
+.tile.tile-dashboard > h5 {
+	flex: 1;
+	text-align: center;
+	display: flex;
+	align-items: flex-end;
+}
+/* EmojiPicker on top */
+.emoji-picker{
+  z-index: 1061 !important;
+}
+.emoji-picker__search{
+  color:black !important;
+}
+/* -- New User Popup -- */
+.popup {
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	background-color: var(--background-accent);
+	z-index: 2;
+	transform: translateY(100%);
+	align-items: center;
+	justify-content: center;
+}
+

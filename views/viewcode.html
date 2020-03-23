@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>View Code</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200&family=IBM+Plex+Sans:wght@200&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="/css/reset.css">
+	<link rel="stylesheet" href="/css/main.css">
+	<link rel="shortcut icon" href="/assets/fav.webp">
+	<link rel="stylesheet" href="/css/overrides.css">
+  <link href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@3/dark.css" rel="stylesheet">
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@9/dist/sweetalert2.min.js"></script>
+<script>var querystring={parse:function(a){var b={};if(a=void 0!==a?a:window.location.search,"string"==typeof a&&a.length>0){"?"===a[0]&&(a=a.substring(1)),a=a.split("&");for(var c=0,d=a.length;d>c;c++){var e,f,g=a[c],h=g.indexOf("=");h>=0?(e=g.substr(0,h),f=g.substr(h+1)):(e=g,f=""),f=decodeURIComponent(f),void 0===b[e]?b[e]=f:b[e]instanceof Array?b[e].push(f):b[e]=[b[e],f]}}return b},stringify:function(a){var b=[];if(a&&a.constructor===Object)for(var c in a)if(a[c]instanceof Array)for(var d=0,e=a[c].length;e>d;d++)b.push([encodeURIComponent(c),encodeURIComponent(a[c][d])].join("="));else b.push([encodeURIComponent(c),encodeURIComponent(a[c])].join("="));return b.join("&")}};</script>
+</head>
+
+<body class="align-items-center justify-content-center flex-direction-column d-flex">
+  <p>Your Code Is</p>
+  <h1 id="code"></h1>
+	</body>
+  <script>
+    let code = querystring.parse().code
+    if(code == undefined || code.trim() == ""){
+      location.href="/"
+    }else{
+      document.getElementById("code").innerText = code
+        Swal.fire({
+      icon: "success",
+      title:"Successfully Saved",
+      text: "You can use the code given on another device to restore the profile!"
+       })
+    }
+
+  </script>
+</html>

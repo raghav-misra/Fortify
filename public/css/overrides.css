@@ -1,0 +1,131 @@
+/* HR */
+hr[spacer] {
+	border: none;
+	height: 2rem;
+	display: block;
+	background: none;
+
+}
+
+hr {
+	border: 1px white solid;
+	margin: 0.5rem 0;
+}
+
+/* BUTTON */
+button {
+	--back-hover: var(--background-accent);
+	border: 2px var(--background-accent) solid;
+	background: none;
+	color: white;
+	transition: background 0.5s ease-in-out;
+}
+
+button.tile {
+	--back-hover: var(--accent);
+}
+
+button:hover {
+	background: var(--back-hover);
+}
+
+
+
+/* TILE */
+.tile-container {
+	background: var(--background);
+	padding: 5px;
+}
+
+.tile-container * {
+	vertical-align: top;
+}
+
+.tile {
+	display: inline-block;
+	margin: 0.75rem 0.5rem;	
+	padding: 0.5rem;
+	width: 8.75rem;
+	height: 8.75rem;
+	background: var(--accent);
+}
+
+.tile.loose {
+	width: auto;
+	height: auto;
+}
+
+.tile-group {
+	display: inline-block;
+	margin: 0 0.25rem;
+}
+
+.tile.w-large {
+	width: 18.5rem;
+}
+
+.tile.h-large {
+	height: 18.5rem;
+}
+
+.tile.w-xlarge {
+	width: 23.625rem;
+}
+.tile.h-xlarge {
+	height: 23.625rem;
+}
+
+.tile.w-xxlarge {
+	width: 28.25rem;
+}
+.tile.h-xxlarge {
+	height: 28.25rem;
+}
+
+.tile.tile-light {
+	--back-hover: var(--text);
+	background: var(--text);
+}
+
+.tile.tile-light * {
+	color: var(--background-accent);
+}
+
+.tile.tile-accent {
+	--back-hover: var(--background-accent);
+	background: var(--background-accent);
+}
+
+
+.tile.w-mega {
+	width: 38.5rem;
+}
+
+.tile.h-mega {
+	height: 43.625rem;
+}
+
+.tile.tile-flex {
+	display: flex;
+}
+
+/* Input */
+input[type="text"] {
+	padding: 0.25rem; 
+	color: white; 
+	background: transparent; 
+	border: none; 
+	border-bottom: 1px solid white; 
+}
+
+/* details */
+
+details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: var(--background-accent);
+    padding: 10px;
+    margin: 2rem;
+    overflow: hidden;
+}

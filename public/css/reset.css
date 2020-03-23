@@ -1,0 +1,216 @@
+/* FontAwesome */
+@import url("https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.12.1/css/all.min.css");
+@import url("normalize.css");
+
+/* Vars */
+:root {
+    --background: #313540;
+    --background-accent: #191b21;
+    --text: white;
+    --accent: cornflowerblue;
+}
+
+/* Font Stuff */
+html {
+    font-size: 16px;
+}
+
+* {
+    font-size: 1rem;
+    font-weight: 200;
+    font-family: "IBM Plex Sans";
+	padding: 0; margin: 0;
+	
+}
+
+.hero {
+    font-size: 2.5rem;
+    color: var(--accent);
+    font-family: "IBM Plex Mono";
+}
+
+h1, .h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2.25rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.75rem;
+}
+
+h5 {
+    font-size: 1.50rem;
+}
+
+h6 {
+    font-size: 1.25rem;
+}
+
+.lead {
+	font-size: 1.125rem;
+}
+
+small { 
+    font-size: 0.75rem;
+}
+
+code, kbd, .mono {
+    font-family: "IBM Plex Mono";
+}
+
+/* Flexibility & Display */
+.d-inline {
+    display: inline;
+}
+
+.d-inline-block {
+    display: inline-block;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.d-none {
+	display: none;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.flex-half {
+	flex: 0.5;
+}
+
+.flex-2 {
+	flex: 2
+}
+
+.flex-direction-column {
+    flex-direction: column;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.align-items-start {
+	align-items: flex-start;
+}
+
+.align-items-end {
+	align-items: flex-end;
+}
+
+.align-self-center {
+	align-self: center;
+}
+
+.align-self-end {
+	align-self: flex-end;
+}
+
+.align-self-start {
+	align-self: flex-start;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-right {
+	justify-content: right;
+}
+
+/* Padding/Margin */
+* {
+    padding: 0;
+    margin: 0;
+	box-sizing: border-box;
+}
+
+header, section, footer {
+    padding: 0.25rem;
+}
+
+.no-margin { margin: 0; }
+.no-padding { padding: 0; }
+
+/* Colors */
+body {
+    background: var(--background);
+}
+
+header, section, footer, nav {
+    background: var(--background-accent);
+}
+
+* {
+    color: var(--text);
+}
+
+.color-accent {
+	color: var(--accent);
+}
+
+.background-accent {
+	background: var(--background-accent);
+}
+
+/* Text align */
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.width-full { width: 100%; }
+.height-full { height: 100%; }
+
+/* Media Queries */
+@media screen and (max-width: 1000px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    html {
+		font-size: 12px;	
+	}
+
+	h1 {
+		font-size: 2.25rem;
+	}
+}
+
+@media screen and (max-width: 350px) {
+	h1 {
+		font-size: 1.75rem;
+	}
+}
+
+/* --- Animations --- */
+@keyframes fade-in {
+	from { opacity: 0 }
+	to { opacity: 1 }
+}
+
+@keyframes fade-out {
+	from { opacity: 1 }
+	to { opacity: 0 }
+}

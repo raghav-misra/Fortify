@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Fortify</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200&family=IBM+Plex+Sans:wght@200&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="/css/reset.css">
+	<link rel="stylesheet" href="/css/main.css">
+	<link rel="stylesheet" href="/css/overrides.css">
+	<link rel="stylesheet" href="/css/core.css">
+	<link rel="stylesheet" href="/css/daygrid.css">
+	<link rel="shortcut icon" href="/assets/fav.webp">
+  <link href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@3/dark.css" rel="stylesheet">
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@9/dist/sweetalert2.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@joeattardi/emoji-button@2.12.1/dist/index.min.js"></script>
+</head>
+
+<body class="d-flex flex-direction-column">
+	<!-- Popup -->
+	<section id="popup" class="popup">
+		<div id="initial" class="text-center">
+			<div style="margin:1%" class="text-center">
+				<h1 class="mono">Create A Profile</h1>
+				<button id="createNewUser" class="tile loose"><h4>Get Started!</h4></button>
+			</div>
+      		<br>
+			<div style="margin:1%" class="text-center">or</div>
+        	<br>
+			<div style="margin:1%" class="text-center">
+					<h1 class="mono">Restore A Profile </h1>
+			<input type="text" id="code" placeholder="Your Code"></input>
+				<button id="restoreUser" class="tile loose"><h4>Restore!</h4></button>
+			</div>
+      </div>
+      <div class="text-center"style="display:none; opacity:0;"id='createProfile'>
+        <div>
+          <h4>Full Name</h4>
+          <br>
+          <input id="name"style="color:white; background: transparent; border: none; border-bottom: 1px solid white; outline:none"></input>
+           <h4 style="margin-top: 2%">Your favorite thing </h4>
+          <br>
+          <input id="image"style="color:white; background: transparent; border: none; border-bottom: 1px solid white; outline:none"></input>
+          <br>
+          <img id="profilePreview" src="">
+          <button id="submitProfile"class="tile loose">Submit</button>
+          <button id="back" class="tile loose">Back <i class="fas fa-angle-left"></i></button>
+        </div>
+
+      </div>
+		</section>
+
+		<!-- Persistent Header -->
+		<title-header
+			v-bind="#data-title :: headerTitle && #data-subtitle :: headerSubtitle && #data-picture :: headerImage"
+		></title-header>
+
+		<!-- SPA Page Container -->
+		<div id="pages" class="d-flex flex-1 align-items-center flex-direction-column"></div>
+   
+
+		<style id="componentStyles"></style>
+		<script src="/js/parts/progress-bar.js"></script>
+		<script type="module" src="/js/app.js"></script>
+    <script src="js/parts/fullcalendar/core.js"></script>
+		<script src="js/parts/fullcalendar/daygrid.js"></script>
+	</body>
+</html>
