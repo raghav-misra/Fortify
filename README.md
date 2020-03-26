@@ -1,4 +1,4 @@
-# Fortify# Fortify 
+# Fortify 
 
 ### An App Created for the COVID-19 Code Jam! 
 
